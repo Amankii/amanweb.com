@@ -18,13 +18,17 @@
 
         <header>
             <div class="hdr">
-                <h1>Aman Web Store</h1>
-                <p>Aman Store provides a convenient platform for discovering and acquiring web applications tailored to various needs and preferences. Users can explore a diverse catalog of applications, from productivity tools to entertainment websites, making it a valuable resource for those seeking to enhance their digital experiences.</p>
+                <div class="mainhdr">
+                    <h1>Aman Web Store</h1>
+                    <p>Aman Store provides a convenient platform for discovering and acquiring web applications tailored to various needs and preferences. Users can explore a diverse catalog of applications, from productivity tools to entertainment websites, making it a valuable resource for those seeking to enhance their digital experiences.</p>                    
+                </div>
+
             </div>
-        </header>
+        </header> 
 
             <div class="android">
-                <h2>Web Applications!</h2>
+                <button id="web">Web Applications!</button>
+                <button id="pc">PC Applications</button>
             </div>
 <!----
             <div class="search-box">
@@ -38,9 +42,7 @@
                 </div>
             </div>
 --->
-        <main>
-
-
+        <main id="webapp">
 
             <div class="card">
                 <img src="./images/AY.png" style="width: 150px; aspect-ratio: 1/1;">
@@ -162,6 +164,15 @@
                 <button><a href="https://amankii.github.io/c-listtz/">Open</a></button>
             </div>
 
+
+            <div class="card">
+                <h2>Coming soon!</h2>
+            </div>
+             
+        </main>
+
+        <section id="pcapp" style="display: none;">
+
             <div class="card">
                 <img src="./images/To-dos.jpg" style="width: 150px; aspect-ratio: 1/1; border-radius: 20px;">
                 <h2>Text To Speech</h2>
@@ -237,14 +248,11 @@
                 <button><a href="https://getintopc.com/softwares/graphic-design/adobe-premiere-pro-2023-free-download-1484032/">Open</a></button>
             </div>
 
-
-
             <div class="card">
                 <h2>Coming soon!</h2>
             </div>
-            
-            
-        </main>
+
+        </section>
 
 
 
@@ -260,7 +268,7 @@
             <form name="submit-to-google-sheet">
                 <input class="name" name="Name" placeholder="Your Name" type="text">
                 <input class="mail" name="Mail" placeholder="Your Mail" type="email">
-                <input class="text" name="Comment" placeholder="Comment" type="text">
+                <input class="text" id="z" name="Comment" placeholder="Comment" type="text">
                 <button class="btn" name="Send" type="submit">Send</button>
                 <span id="msg"></span>
             </form>
@@ -272,6 +280,9 @@
             <p>Copyright &copy; 2023,<strong>by <img src="./images/AY.png" style="width: 30px; aspect-ratio: 1/1; transform: translateY(10px);"> Aman Store.</strong></p>
         <!----    <a href="#top"><i class="fa-solid fa-arrow-up">TOP</i></a> --->
         </footer>
+
+          <!--  feedback  -->
+
 
 </body>
 <script src="script.js" defer></script>
