@@ -32,24 +32,38 @@ function display(result){
 /*btn#9d0b59*/
 document.addEventListener('DOMContentLoaded', () => {
 
+    const body = document.querySelector('body');
+    const cards = document.querySelector('.card');
+
     const webApp = document.querySelector('#webapp');
     const pcApp = document.querySelector('#pcapp');
     const webtn = document.querySelector('#web');
     const pcbtn = document.querySelector('#pc');
+    const pcgames = document.querySelector('#pcgames');
+    const gamesbtn = document.querySelector('#game');
 
     webtn.onclick = () => {
 
         webApp.style.display = 'flex';
         pcApp.style.display = 'none';
-
-
+        pcgames.style.display = 'none';
+        body.style.backgroundColor = 'dodgerblue';
     };
 
     pcbtn.onclick = () => {
 
         pcApp.style.display = 'flex';
         webApp.style.display = 'none';
+        pcgames.style.display = 'none';
+        body.style.backgroundColor = 'lightslategray';
+    };
 
+    gamesbtn.onclick = () => {
+
+        pcgames.style.display = 'flex';
+        pcApp.style.display = 'none';
+        webApp.style.display = 'none';
+        body.style.backgroundColor = '#b400b4';
     };
 
     /*    send    ----------------------------*/
@@ -86,7 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.disabled = true;
         })
         .catch(error => console.error('Error!', error.message))
-    })
+    });
+
+
   
 
 });
